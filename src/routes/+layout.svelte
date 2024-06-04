@@ -5,7 +5,7 @@
     <a href="/">Home</a>
     <a href="/routes">Routes</a>
     <a href="/transport">Transport</a>
-    <a href="/accommodation">Accommodation</a>
+    <a href="/accommodation">Accom</a>
   </nav>
 
   <main>

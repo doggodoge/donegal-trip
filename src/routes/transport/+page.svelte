@@ -53,7 +53,8 @@
   }
 
   img {
-    width: var(--size);
+    width: 30rem;
+    max-width: 100%;
     height: auto;
   }
 </style>
