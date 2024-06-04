@@ -1,3 +1,18 @@
+<svelte:head>
+  <title>Donegal Trip</title>
+  <meta
+    name="description"
+    content="Small info site containing information about an upcoming cycling trip."
+  />
+  <meta property="og:title" content="Donegal Trip" />
+  <meta
+    property="og:description"
+    content="Small info site containing information about an upcoming cycling trip."
+  />
+  <meta property="og:url" content="https://derry.garymoore.ie" />
+  <meta property="og:type" content="website" />
+</svelte:head>
+
 <div class="content">
   <h1>Donegal Trip 🚴‍♂️</h1>
 
