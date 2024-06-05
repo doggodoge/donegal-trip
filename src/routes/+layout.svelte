@@ -1,3 +1,18 @@
+<script lang="ts">
+  type RouteAndName = {
+    href: string;
+    name: string;
+  };
+
+  const routes: RouteAndName[] = [
+    { href: '/', name: 'Home' },
+    { href: '/routes', name: 'Routes' },
+    { href: '/transport', name: 'Transport' },
+    { href: '/accommodation', name: 'Accom' },
+    { href: '/stops', name: 'Stops' },
+  ];
+</script>
+
 <svelte:head>
   <title>Donegal Trip</title>
   <meta
@@ -17,10 +32,9 @@
   <h1>Donegal Trip 🚴‍♂️</h1>
 
   <nav class="nav">
-    <a href="/">Home</a>
-    <a href="/routes">Routes</a>
-    <a href="/transport">Transport</a>
-    <a href="/accommodation">Accom</a>
+    {#each routes as route (route.href)}
+      <a class="shadow" href={route.href}>{route.name}</a>
+    {/each}
   </nav>
 
   <main>
@@ -40,8 +54,23 @@
 
   .nav {
     display: flex;
-    gap: 2ch;
+    gap: 1rem;
     padding-bottom: 1rem;
     flex-wrap: wrap;
+  }
+
+  .nav a {
+    background: #32322c;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.3rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .shadow {
+    box-shadow:
+      0 1px 3px 0 rgb(0 0 0 / 0.1),
+      0 1px 2px -1px rgb(0 0 0 / 0.1);
+    transition: 100ms;
   }
 </style>
