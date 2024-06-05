@@ -11,7 +11,7 @@
   <h4>Location</h4>
 
   <iframe
-    name="Point bar"
+    title="Point bar"
     width="100%"
     height="350"
     src="https://www.openstreetmap.org/export/embed.html?bbox=-6.966708004474641%2C55.190640751797645%2C-6.962572038173676%2C55.19191616502908&amp;layer=cyclemap&amp;marker=55.19127769796368%2C-6.964640021324158"
