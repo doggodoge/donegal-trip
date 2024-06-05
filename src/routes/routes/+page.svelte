@@ -1,9 +1,19 @@
-<script>
+<script lang="ts">
   import KomootEmbed from '$lib/KomootEmbed.svelte';
+  import { page } from '$app/stores';
+  import type { PageData } from './$types';
+
+  export let data: PageData;
 </script>
 
 <article>
   <header><h2>Routes</h2></header>
+
+  <h3>Current weather</h3>
+
+  {#each data.currentWeather as weather (weather)}
+    <p>{weather}</p>
+  {/each}
 
   <h3>Castlerock to Malin Head</h3>
 
