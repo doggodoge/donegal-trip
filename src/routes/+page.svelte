@@ -1,7 +1,3 @@
-<script lang="ts">
-  import KomootEmbed from '$lib/KomootEmbed.svelte';
-</script>
-
 <p>
   This is a cycling trip from Castlerock, Co. Derry to Malin Head in the
   Inishowen Peninsula, Co. Donegal.
