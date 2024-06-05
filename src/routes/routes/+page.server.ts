@@ -1,5 +1,7 @@
 import type { PageServerLoad } from './$types';
 
+export const prerender = false;
+
 const WEATHER_KEY = import.meta.env.VITE_WEATHER_KEY;
 
 const coords: Record<string, { lat: string; lon: string }> = {
