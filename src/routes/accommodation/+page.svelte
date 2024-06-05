@@ -7,34 +7,20 @@
     15th to the 16th of June.
   </p>
 
-  <div class="frames">
-    <iframe
-      title="Sleivebane"
-      width="425"
-      height="350"
-      src="https://www.openstreetmap.org/export/embed.html?bbox=-7.341704964637757%2C55.36741446062698%2C-7.3334330320358285%2C55.36995391460708&amp;layer=cyclemap"
-      style="border: 1px solid black; margin: auto;"
-    ></iframe>
+  <p>
+    <a href="https://www.airbnb.co.uk/rooms/16707164"
+      >Airbnb accommodation link</a
+    >.
+  </p>
 
-    <div class="iframely-embed" style="min-width: 450px;">
-      <div
-        class="iframely-responsive"
-        style="margin: auto;"
-      >
-        <a
-          href="https://www.airbnb.co.uk/rooms/16707164"
-          data-iframely-url="//iframely.net/oOR3B9w"
-        ></a>
-      </div>
-    </div>
-    <script async src="//iframely.net/embed.js"></script>
-  </div>
+  <h3>Map</h3>
+
+  <!-- Map of Sleivebane, Co. Donegal. -->
+  <iframe
+    title="Sleivebane"
+    width="100%"
+    height="600"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-7.341704964637757%2C55.36741446062698%2C-7.3334330320358285%2C55.36995391460708&amp;layer=cyclemap"
+    style="border: 1px solid black; margin: auto;"
+  ></iframe>
 </article>
-
-<style>
-  .frames {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-  }
-</style>
