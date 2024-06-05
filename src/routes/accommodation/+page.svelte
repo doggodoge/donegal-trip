@@ -16,25 +16,18 @@
       style="border: 1px solid black; margin: auto;"
     ></iframe>
 
-    <div
-      class="airbnb-embed-frame"
-      data-id="16707164"
-      data-view="home"
-      data-hide-price="true"
-      style="width: 450px; height: 300px; margin: auto;"
-    >
-      <a
-        href="https://www.airbnb.co.uk/rooms/16707164?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget"
-        >View on Airbnb</a
-      ><a
-        href="https://www.airbnb.co.uk/rooms/16707164?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget"
-        rel="nofollow"
-        >Cabin in Malin Head · ★4.91 · Studio · 2 beds · 1 bathroom</a
-      ><script
-        async={true}
-        src="https://www.airbnb.co.uk/embeddable/airbnb_jssdk"
-      ></script>
+    <div class="iframely-embed" style="min-width: 450px;">
+      <div
+        class="iframely-responsive"
+        style="margin: auto;"
+      >
+        <a
+          href="https://www.airbnb.co.uk/rooms/16707164"
+          data-iframely-url="//iframely.net/oOR3B9w"
+        ></a>
+      </div>
     </div>
+    <script async src="//iframely.net/embed.js"></script>
   </div>
 </article>
 
