@@ -11,7 +11,11 @@ const coords: Record<string, { lat: string; lon: string }> = {
   },
   derry: {
     lat: '54.995800',
-    lon: '-7.307400'
+    lon: '-7.307400',
+  },
+  sleivebawn: {
+    lat: '55.3685673',
+    lon: '-7.3393321',
   },
 };
 
@@ -45,10 +49,16 @@ function formatWeatherData(data: WeatherData) {
   return `${city}: ${tempCelcius.toPrecision(3)}°C, ${conditions}, ${windSpeedKmh.toPrecision(3)} km/h, Humidity ${humidity}%`;
 }
 
-async function fetchAll(coords: Array<{ lat: string; lon: string }>): Promise<string[]> {
+async function fetchAll(
+  coords: Array<{ lat: string; lon: string }>
+): Promise<string[]> {
   let coordsPromises = [];
   for (const coord of coords) {
-    coordsPromises.push(fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${coord.lat}&lon=${coord.lon}&appid=${WEATHER_KEY}`))
+    coordsPromises.push(
+      fetch(
+        `https://api.openweathermap.org/data/2.5/weather?lat=${coord.lat}&lon=${coord.lon}&appid=${WEATHER_KEY}`
+      )
+    );
   }
   const data = await Promise.all(coordsPromises);
 
