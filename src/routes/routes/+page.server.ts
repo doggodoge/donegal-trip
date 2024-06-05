@@ -14,8 +14,8 @@ const coords: Record<string, { lat: string; lon: string }> = {
     lon: '-7.307400',
   },
   sleivebawn: {
-    lat: '55.3685673',
-    lon: '-7.3393321',
+    lat: '55.3685806',
+    lon: '-7.3369825',
   },
 };
 
