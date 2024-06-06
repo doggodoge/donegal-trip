@@ -19,7 +19,7 @@
   <iframe
     title="Sleivebane"
     width="100%"
-    height="600"
+    height="350"
     src="https://www.openstreetmap.org/export/embed.html?bbox=-7.341704964637757%2C55.36741446062698%2C-7.3334330320358285%2C55.36995391460708&amp;layer=cyclemap"
     style="border: 1px solid black; margin: auto;"
   ></iframe>
