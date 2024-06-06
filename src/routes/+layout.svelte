@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { assets } from '$app/paths';
+
   type RouteAndName = {
     href: string;
     name: string;
@@ -19,6 +21,7 @@
     name="description"
     content="Small info site containing information about an upcoming cycling trip."
   />
+  <!-- Weird facebook info for nice social share links. -->
   <meta property="og:title" content="Donegal Trip" />
   <meta
     property="og:description"
@@ -26,6 +29,31 @@
   />
   <meta property="og:url" content="https://derry.garymoore.ie" />
   <meta property="og:type" content="website" />
+  <!-- Favicons -->
+  <link
+    rel="apple-touch-icon"
+    sizes="152x152"
+    href="{assets}/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="{assets}/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="{assets}/favicon-16x16.png"
+  />
+  <link rel="manifest" href="{assets}/site.webmanifest" />
+  <link
+    rel="mask-icon"
+    href="{assets}/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="theme-color" content="#ffffff" />
 </svelte:head>
 
 <div class="content">
