@@ -11,9 +11,47 @@
 
   export let location: Location;
   export let zoom: number = 14;
-  export let imgSrc: string = '';
-  export let attributionText: string = '';
-  export let attributionHref: string = '';
+  export let imgSrc: string = "";
+  export let attributionText: string = "";
+  export let attributionHref: string = "";
+  export let licenseType:
+    | "CC BY"
+    | "CC BY-SA"
+    | "CC BY-NC"
+    | "CC BY-NC-SA"
+    | "CC BY-ND"
+    | "CC BY-NC-ND"
+    | "CC0" = "CC0";
+
+  let licenseHref: string;
+
+  $: {
+    switch (licenseType) {
+      case "CC BY":
+        licenseHref = "https://creativecommons.org/licenses/by/4.0/";
+        break;
+      case "CC BY-SA":
+        licenseHref = "https://creativecommons.org/licenses/by-sa/4.0/";
+        break;
+      case "CC BY-NC":
+        licenseHref = "https://creativecommons.org/licenses/by-nc/4.0/";
+        break;
+      case "CC BY-NC-SA":
+        licenseHref = "https://creativecommons.org/licenses/by-nc-sa/4.0/";
+        break;
+      case "CC BY-ND":
+        licenseHref = "https://creativecommons.org/licenses/by-nd/4.0/";
+        break;
+      case "CC BY-NC-ND":
+        licenseHref = "https://creativecommons.org/licenses/by-nc-nd/4.0/";
+        break;
+      case "CC0":
+        licenseHref = "https://creativecommons.org/publicdomain/zero/1.0/";
+        break;
+      default:
+        licenseHref = "";
+    }
+  }
 
   let map;
   let mapDiv: HTMLDivElement;
@@ -32,17 +70,17 @@
 </script>
 
 <div class="container">
-  {#if imgSrc !== ''}
+  {#if imgSrc !== ""}
     <div class="image-and-attr">
       <enhanced:img src={imgSrc} alt={attributionText ?? ""} />
     </div>
   {/if}
   <div id="map" bind:this={mapDiv} />
 </div>
-{#if attributionText !== ''}
+{#if attributionText}
   <p>
-    {attributionText}
-    {#if attributionHref}, <a href={attributionHref}>Link</a>{/if}
+    {attributionText}{#if licenseType}, <a href={licenseHref}>{licenseType}</a
+      >{/if}{#if attributionHref}, <a href={attributionHref}>Link</a>{/if}
   </p>
 {/if}
 
@@ -57,9 +95,9 @@
     display: flex;
     width: auto;
     height: 350px;
-    
-    @media(max-width: 800px) {
-      width: 100%;  
+
+    @media (max-width: 800px) {
+      width: 100%;
       height: auto;
     }
   }

@@ -1,3 +1,7 @@
+<script>
+  import Stop from "$lib/Stop.svelte";
+</script>
+
 <article>
   <header><h2>Accommodation</h2></header>
 
@@ -15,12 +19,11 @@
 
   <h3>Map</h3>
 
-  <!-- Map of Sleivebane, Co. Donegal. -->
-  <iframe
-    title="Sleivebane"
-    width="100%"
-    height="350"
-    src="https://www.openstreetmap.org/export/embed.html?bbox=-7.341704964637757%2C55.36741446062698%2C-7.3334330320358285%2C55.36995391460708&amp;layer=cyclemap"
-    style="border: 1px solid black; margin: auto;"
-  ></iframe>
+  <Stop
+    location={{
+      lat: 55.3686,
+      lon: -7.33703,
+    }}
+    zoom={15}
+  />
 </article>

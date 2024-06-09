@@ -14,8 +14,9 @@
 
   <Stop
     imgSrc={MussendenTemple}
-    attributionText="by D LN, CC BY-SA 4.0"
+    attributionText="By D LN"
     attributionHref="https://commons.wikimedia.org/w/index.php?curid=88231585"
+    licenseType="CC BY-SA"
     location={{ lat: 55.16776, lon: -6.81097 }}
     zoom={17}
   />
