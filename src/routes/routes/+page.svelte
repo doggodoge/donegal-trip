@@ -62,7 +62,7 @@
       tourId="1626332768"
       shareToken="agU8kFlEKbmYbdYyQQ6jaJfAcCnqg24yZPE1tFN96FHx5F1hFM"
       width="100%"
-      height="700"
+      height="350"
     />
   </div>
 </article>

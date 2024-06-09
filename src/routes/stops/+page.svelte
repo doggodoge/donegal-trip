@@ -1,5 +1,24 @@
+<script>
+  import Stop from "$lib/Stop.svelte";
+  import { MussendenTemple } from "$lib";
+</script>
+
 <article>
   <header><h2>Stops</h2></header>
+
+  <h3>Mussenden Temple</h3>
+
+  <p>We're going past this place anyway, may as well visit.</p>
+
+  <h4>Location</h4>
+
+  <Stop
+    imgSrc={MussendenTemple}
+    attributionText="by D LN, CC BY-SA 4.0"
+    attributionHref="https://commons.wikimedia.org/w/index.php?curid=88231585"
+    location={{ lat: 55.16776, lon: -6.81097 }}
+    zoom={17}
+  />
 
   <h3>Point bar</h3>
 
@@ -10,18 +29,13 @@
 
   <h4>Location</h4>
 
-  <iframe
-    title="Point bar"
-    width="100%"
-    height="350"
-    src="https://www.openstreetmap.org/export/embed.html?bbox=-6.966708004474641%2C55.190640751797645%2C-6.962572038173676%2C55.19191616502908&amp;layer=cyclemap&amp;marker=55.19127769796368%2C-6.964640021324158"
-    style="border: 1px solid black"
-  ></iframe><br /><small
-    ><a
-      href="https://www.openstreetmap.org/?mlat=55.19128&amp;mlon=-6.96464#map=19/55.19128/-6.96464&amp;layers=C"
-      >View Larger Map</a
-    ></small
-  >
+  <Stop
+    location={{
+      lat: 55.19127769796368,
+      lon: -6.964640021324158,
+    }}
+    zoom={16}
+  />
 
   <p><em>More to come...</em></p>
 </article>

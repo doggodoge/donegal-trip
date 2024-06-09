@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { assets } from '$app/paths';
+  import { assets } from "$app/paths";
+  import "mapbox-gl/dist/mapbox-gl.css";
 
   type RouteAndName = {
     href: string;
@@ -7,11 +8,11 @@
   };
 
   const routes: RouteAndName[] = [
-    { href: '/', name: 'Home' },
-    { href: '/routes', name: 'Routes' },
-    { href: '/transport', name: 'Transport' },
-    { href: '/accommodation', name: 'Accom' },
-    { href: '/stops', name: 'Stops' },
+    { href: "/", name: "Home" },
+    { href: "/routes", name: "Routes" },
+    { href: "/transport", name: "Transport" },
+    { href: "/accommodation", name: "Accom" },
+    { href: "/stops", name: "Stops" },
   ];
 </script>
 
@@ -48,11 +49,7 @@
     href="{assets}/favicon-16x16.png"
   />
   <link rel="manifest" href="{assets}/site.webmanifest" />
-  <link
-    rel="mask-icon"
-    href="{assets}/safari-pinned-tab.svg"
-    color="#5bbad5"
-  />
+  <link rel="mask-icon" href="{assets}/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="theme-color" content="#ffffff" />
 </svelte:head>
 
