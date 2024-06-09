@@ -57,6 +57,11 @@
     display: flex;
     width: auto;
     height: 350px;
+    
+    @media(max-width: 800px) {
+      width: 100%;  
+      height: auto;
+    }
   }
 
   .container {
@@ -64,7 +69,7 @@
     flex-direction: row;
     gap: 1rem;
 
-    @media (max-width: 1280px) {
+    @media (max-width: 800px) {
       flex-direction: column;
     }
   }
