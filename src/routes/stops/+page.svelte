@@ -87,5 +87,5 @@
     zoom={14}
   />
 
-  <p><em>More to come...</em></p>
+  <p>For the rest, stops are obvious, beaches etc. We can decide if we want to stop.</p>
 </article>
