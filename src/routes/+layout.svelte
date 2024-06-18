@@ -1,5 +1,6 @@
 <script lang="ts">
   import { assets } from "$app/paths";
+    import DeprecatedBanner from '$lib/DeprecatedBanner.svelte';
   import "mapbox-gl/dist/mapbox-gl.css";
 
   type RouteAndName = {
@@ -61,6 +62,8 @@
       <a class="shadow" href={route.href}>{route.name}</a>
     {/each}
   </nav>
+
+  <DeprecatedBanner />
 
   <main>
     <slot></slot>
